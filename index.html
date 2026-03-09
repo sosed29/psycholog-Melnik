@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Мельник Дарья Сергеевна — профессиональный психолог в Краснодаре. Индивидуальные консультации, помощь с тревогой и стрессом, современный подход.">
+  <meta name="keywords" content="психолог Краснодар, Дарья Мельник, консультация психолога, психологическая помощь, тревога, стресс">
+  <title>Мельник Дарья Сергеевна — Профессиональный психолог | Краснодар</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>">
+
+  <!-- Шрифты -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Иконки -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Loading -->
+  <div class="loading" id="loading">
+    <div class="loading-spinner"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo">
+        <span class="logo__name">Дарья Мельник</span>
+        <span class="logo__title">Психолог</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#about" class="nav__link"><i class="fas fa-user"></i> Обо мне</a>
+        <a href="#services" class="nav__link"><i class="fas fa-hand-holding-heart"></i> Услуги</a>
+        <a href="#certificates" class="nav__link"><i class="fas fa-certificate"></i> Сертификаты</a>
+        <a href="#contacts" class="nav__link nav__link--cta"><i class="fas fa-calendar-check"></i> Запись</a>
+      </nav>
+
+      <div class="header__contacts">
+        <a href="tel:+79604751147" class="header__phone">
+          <i class="fas fa-phone"></i>
+          <span>+7 (960) 475-11-47</span>
+        </a>
+      </div>
+
+      <button class="burger" type="button" aria-label="Меню" aria-expanded="false">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__content">
+      <a href="#about" class="mobile-menu__link"><i class="fas fa-user"></i> Обо мне</a>
+      <a href="#services" class="mobile-menu__link"><i class="fas fa-hand-holding-heart"></i> Услуги</a>
+      <a href="#certificates" class="mobile-menu__link"><i class="fas fa-certificate"></i> Сертификаты</a>
+      <a href="#contacts" class="mobile-menu__link mobile-menu__link--cta"><i class="fas fa-calendar-check"></i> Запись</a>
+      <a href="tel:+79604751147" class="mobile-menu__phone">
+        <i class="fas fa-phone"></i>
+        <span>+7 (960) 475-11-47</span>
+      </a>
+      <a href="https://t.me/ds_melnik" target="_blank" class="mobile-menu__social">
+        <i class="fab fa-telegram"></i>
+        <span>Telegram: @ds_melnik</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__content">
+          <div class="hero__badge">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Профессиональный психолог</span>
+          </div>
+
+          <h1 class="hero__title">
+            <span class="hero__title-line">Мельник</span>
+            <span class="hero__title-line hero__title-line--accent">Дарья</span>
+            <span class="hero__title-line">Сергеевна</span>
+          </h1>
+
+          <p class="hero__subtitle">
+            Помогаю обрести гармонию и справиться с жизненными трудностями
+          </p>
+
+          <p class="hero__description">
+            Дипломированный психолог с более чем 5-летним опытом. Работаю в уютном кабинете в Краснодаре.
+            Индивидуальный подход к каждому клиенту.
+          </p>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__number">5+</span>
+              <span class="stat__label">Лет опыта</span>
+            </div>
+            <div class="stat">
+              <span class="stat__number">100%</span>
+              <span class="stat__label">Конфиденциальность</span>
+            </div>
+          </div>
+
+          <div class="hero__cta">
+            <a href="#contacts" class="btn btn--primary btn--large">
+              <i class="fas fa-calendar-alt"></i>
+              Записаться на консультацию
+            </a>
+            <a href="#about" class="btn btn--secondary btn--large">
+              <i class="fas fa-chevron-down"></i>
+              Узнать больше
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__photo-wrapper">
+          <div class="hero__photo-container">
+            <img src="images/DS.jpg"
+                 alt="Мельник Дарья Сергеевна — профессиональный психолог"
+                 class="hero__photo"
+                 width="480"
+                 height="600"
+                 loading="eager">
+
+            <div class="photo-decoration photo-decoration--1"></div>
+            <div class="photo-decoration photo-decoration--2"></div>
+            <div class="photo-decoration photo-decoration--3"></div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Прокрутить вниз">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Обо мне</h2>
+        <p class="section-subtitle">Профессиональный психолог с высшим образованием</p>
+      </div>
+
+      <div class="about__content">
+        <div class="about__text">
+          <p>Приветствую! Я Дарья Мельник — практикующий психолог с высшим психологическим образованием и более 5 лет опыта работы.</p>
+
+          <p>Закончила Кубанский государственный университет по специальности "Клиническая психология". Прошла дополнительное обучение в Московском институте гештальт-терапии и консультирования.</p>
+
+          <p>В своей практике использую интегративный подход, сочетая методы когнитивно-поведенческой терапии, гештальт-подхода и арт-терапии.</p>
+
+          <div class="about__principles">
+            <h3>Мои принципы работы:</h3>
+            <div class="principles-grid">
+              <div class="principle">
+                <i class="fas fa-hand-holding-heart principle__icon"></i>
+                <h4>Эмпатия и поддержка</h4>
+                <p>«Со мной можно всё: плакать, злиться, молчать, сомневаться». Я не оцениваю и не тороплю. Моя задача — чтобы вы чувствовали: здесь безопасно. С любой эмоцией, с любой историей.</p>
+              </div>
+              <div class="principle">
+                <i class="fas fa-user-check principle__icon"></i>
+                <h4>Индивидуальный подход</h4>
+                <p>«Нет шаблонов. Есть вы». То, что помогло одному, может не подойти другому. Мы идём вашим темпом и ищем ваши ответы, без универсальных схем «для всех».</p>
+              </div>
+              <div class="principle">
+                <i class="fas fa-lock principle__icon"></i>
+                <h4>Конфиденциальность</h4>
+                <p>«Всё, о чём мы говорим, остаётся между нами». Это не просто слово, а этическая основа моей работы. Здесь можно быть собой — без страха, что ваши истории уйдут вовне.</p>
+              </div>
+              <div class="principle">
+                <i class="fas fa-award principle__icon"></i>
+                <h4>Профессионализм</h4>
+                <p>«Я учусь всё время. Чтобы вы были спокойны». Регулярная личная терапия, супервизии, интервизии, повышение квалификации — это моя ответственность перед вами.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__details">
+          <div class="info-card">
+            <h3 class="info-card__title">
+              <i class="fas fa-map-marker-alt"></i>
+              Местоположение
+            </h3>
+            <p class="info-card__content">
+              <strong>Краснодар</strong><br>
+              ул. Домбайская, 10/1с1
+              <a
+                href="https://yandex.ru/maps/?rtext=~Краснодар,+ул.+Домбайская,+10%2F1с1&rtt=auto"
+                class="location-nav-icon"
+                target="_blank"
+                rel="noopener"
+                title="Построить маршрут в Яндекс.Навигаторе"
+              >
+                <i class="fas fa-location-arrow"></i>
+              </a><br>
+              <small>Удобное расположение, уютный кабинет</small>
+            </p>
+          </div>
+
+          <div class="info-card">
+            <h3 class="info-card__title">
+              <i class="fas fa-clock"></i>
+              Часы работы
+            </h3>
+            <p class="info-card__content">
+              <strong>Пн-Пт:</strong> 10:00 - 20:00<br>
+              <strong>Суббота:</strong> 11:00 - 17:00<br>
+              <strong>Воскресенье:</strong> выходной
+            </p>
+          </div>
+
+          <div class="info-card">
+            <h3 class="info-card__title">
+              <i class="fas fa-phone"></i>
+              Контакты
+            </h3>
+            <p class="info-card__content">
+              <a href="tel:+79604751147">+7 (960) 475-11-47</a><br>
+              <small>Звонки с 10:00 до 19:00</small><br><br>
+
+              <a href="https://t.me/ds_melnik" target="_blank" class="telegram-link">
+                <i class="fab fa-telegram"></i>
+                Telegram: @ds_melnik
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Услуги и цены</h2>
+        <p class="section-subtitle">Индивидуальный подбор формата работы</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-card__header">
+            <i class="fas fa-user service-card__icon"></i>
+            <h3 class="service-card__title">Очная консультация</h3>
+            <div class="service-card__price">2 000 ₽</div>
+            <div class="service-card__duration"><i class="fas fa-clock"></i> 60 минут</div>
+          </div>
+
+          <ul class="service-card__features">
+            <li><i class="fas fa-check"></i> Встреча в уютном кабинете в центре</li>
+            <li><i class="fas fa-check"></i> Живой разговор и тёплая атмосфера</li>
+            <li><i class="fas fa-check"></i> Пространство, где можно выдохнуть и быть собой</li>
+          </ul>
+
+          <a href="#contacts" class="btn btn--primary service-card__btn">Записаться</a>
+        </div>
+
+        <div class="service-card service-card--featured">
+          <div class="service-card__badge">Выгодно</div>
+          <div class="service-card__header">
+            <i class="fas fa-calendar-alt service-card__icon"></i>
+            <h3 class="service-card__title">Пакет 5 сессий</h3>
+            <div class="service-card__price">9 000 ₽</div>
+            <div class="service-card__duration"><i class="fas fa-clock"></i> 5 встреч по 60 мин</div>
+          </div>
+
+          <ul class="service-card__features">
+            <li><i class="fas fa-check"></i> Для тех, кто хочет идти глубже и видеть результат</li>
+            <li><i class="fas fa-check"></i> 5 встреч (очно или онлайн)</li>
+            <li><i class="fas fa-check"></i> Поддержка в чате между сессиями (короткие вопросы)</li>
+            <li><i class="fas fa-check"></i> Приоритет при записи</li>
+          </ul>
+
+          <a href="#contacts" class="btn btn--primary service-card__btn">Выбрать курс</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__header">
+            <i class="fas fa-video service-card__icon"></i>
+            <h3 class="service-card__title">Онлайн-консультация</h3>
+            <div class="service-card__price">2 000 ₽</div>
+            <div class="service-card__duration"><i class="fas fa-clock"></i> 60 минут</div>
+          </div>
+
+          <ul class="service-card__features">
+            <li><i class="fas fa-check"></i> Консультация из любой точки мира</li>
+            <li><i class="fas fa-check"></i> Работаем в Zoom, FaceTime или Телемост</li>
+            <li><i class="fas fa-check"></i> Если нет возможности приехать или вы в другом городе</li>
+            <li><i class="fas fa-check"></i> Эффективность не ниже, чем при очной встрече</li>
+          </ul>
+
+          <a href="#contacts" class="btn btn--primary service-card__btn">Записаться</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="certificates">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Сертификаты</h2>
+        <p class="section-subtitle">Профессиональное образование и постоянное развитие</p>
+      </div>
+
+      <div class="certificates-slider">
+        <div class="certificates-track" id="certificatesTrack">
+          <!-- Сертификаты будут добавляться через JavaScript -->
+        </div>
+
+        <button class="slider-btn slider-btn--prev" aria-label="Предыдущий слайд">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="slider-btn slider-btn--next" aria-label="Следующий слайд">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+
+        <div class="slider-dots" id="sliderDots">
+          <!-- Точки будут добавляться через JavaScript -->
+        </div>
+      </div>
+
+      <div class="certificates-counter">
+        <span id="currentSlide">1</span> / <span id="totalSlides">21</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal для детального просмотра -->
+  <div class="modal" id="certificateModal">
+    <div class="modal__content">
+      <button class="modal__close" aria-label="Закрыть">
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="modal__image-container">
+        <img id="modalImage" src="" alt="Сертификат" loading="lazy">
+      </div>
+    </div>
+  </div>
+
+  <!-- Contacts & Booking Section -->
+  <section id="contacts" class="contacts">
+    <div class="container">
+      <div class="contacts-grid">
+        <div class="contacts-info">
+          <div class="section-header">
+            <h2 class="section-title">Запись на консультацию</h2>
+            <p class="section-subtitle">Заполните форму, и я свяжусь с вами в течение 2 часов</p>
+          </div>
+
+          <div class="contacts-details">
+            <div class="contact-item contact-item--highlight">
+              <i class="fas fa-phone contact-item__icon"></i>
+              <div class="contact-item__content">
+                <h3>Телефон для записи</h3>
+                <p><a href="tel:+79604751147">+7 (960) 475-11-47</a><br><small>Также доступен в MAX и Telegram</small></p>
+              </div>
+            </div>
+
+            <div class="contact-item contact-item--highlight">
+              <i class="fab fa-telegram contact-item__icon"></i>
+              <div class="contact-item__content">
+                <h3>Быстрая связь</h3>
+                <p><a href="https://t.me/ds_melnik" target="_blank">Telegram: @ds_melnik</a><br><small>Отвечаю в течение 30 минут</small></p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-clock contact-item__icon"></i>
+              <div class="contact-item__content">
+                <h3>Часы работы</h3>
+                <p><strong>Пн-Пт:</strong> 10:00 - 20:00<br><strong>Суббота:</strong> 11:00 - 17:00<br><strong>Воскресенье:</strong> выходной</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt contact-item__icon"></i>
+              <div class="contact-item__content">
+                <h3>Адрес офиса</h3>
+                <p>
+                  <a href="https://yandex.ru/maps/?rtext=~Краснодар,+ул.+Домбайская,+10%2F1с1&rtt=auto"
+                     target="_blank"
+                     rel="noopener"
+                     title="Построить маршрут в Яндекс.Навигаторе">
+                    г. Краснодар<br>ул. Домбайская, 10/1с1
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="booking-form-container">
+          <form class="booking-form" id="bookingForm">
+            <div class="form-group">
+              <label for="name" class="form-label">
+                <i class="fas fa-user"></i> Ваше имя *
+              </label>
+              <input type="text" id="name" name="name" class="form-input" required placeholder="Как к вам обращаться">
+            </div>
+
+            <div class="form-group">
+              <label for="phone" class="form-label">
+                <i class="fas fa-phone"></i> Телефон *
+              </label>
+              <input type="tel" id="phone" name="phone" class="form-input" required placeholder="+7 (___) ___-__-__">
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label">
+                <i class="fas fa-envelope"></i> Email (необязательно)
+              </label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="example@mail.ru">
+            </div>
+
+            <div class="form-group">
+              <label for="service" class="form-label">
+                <i class="fas fa-hand-holding-heart"></i> Услуга *
+              </label>
+              <select id="service" name="service" class="form-input" required>
+                <option value="">Выберите услугу</option>
+                <option value="individual">Очная консультация (2 000 ₽)</option>
+                <option value="course">Пакет 5 сессий (9 000 ₽)</option>
+                <option value="online">Онлайн-консультация (2 000 ₽)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label">
+                <i class="fas fa-comment"></i> Сообщение (необязательно)
+              </label>
+              <textarea id="message" name="message" class="form-input form-textarea" rows="4" placeholder="Опишите, с чем хотите поработать..."></textarea>
+            </div>
+
+            <div class="form-group form-group--checkbox">
+              <input type="checkbox" id="privacy" name="privacy" required>
+              <label for="privacy" class="checkbox-label">
+                Я согласен на обработку персональных данных
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--large btn--full">
+              <i class="fas fa-paper-plane"></i>
+              Отправить заявку
+            </button>
+
+            <div class="form-status" id="formStatus"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <div class="footer-logo">
+            <span class="footer-logo__name">Дарья Мельник</span>
+            <span class="footer-logo__title">Психолог в Краснодаре</span>
+          </div>
+          <p class="footer-description">
+            Профессиональная психологическая помощь.
+            Индивидуальный подход к каждому клиенту.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-title">Навигация</h3>
+          <nav class="footer-nav">
+            <a href="#about" class="footer-link">Обо мне</a>
+            <a href="#services" class="footer-link">Услуги</a>
+            <a href="#certificates" class="footer-link">Сертификаты</a>
+            <a href="#contacts" class="footer-link">Запись</a>
+          </nav>
+        </div>
+
+        <div class="footer-section">
+          <h3 class="footer-title">Контакты</h3>
+          <div class="footer-contacts">
+            <a href="tel:+79604751147" class="footer-contact">
+              <i class="fas fa-phone"></i>
+              <span>+7 (960) 475-11-47</span>
+            </a>
+            <a href="https://t.me/ds_melnik" target="_blank" class="footer-contact">
+              <i class="fab fa-telegram"></i>
+              <span>Telegram: @ds_melnik</span>
+            </a>
+            <a href="https://max.ru" target="_blank" class="footer-contact">
+              <div class="max-icon">
+                <span>M</span>
+              </div>
+              <span>MAX: +7 (999) 123-45-67</span>
+            </a>
+            <div class="footer-contact">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Краснодар, ул. Домбайская, 10/1с1</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © <span id="currentYear">2024</span> Мельник Дарья Сергеевна. Все права защищены.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Кнопка "Наверх" -->
+  <button id="backToTop" class="back-to-top" aria-label="Вернуться наверх">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Подключение JavaScript -->
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1112,6 +1112,18 @@ button {
   border: 2px solid rgba(139, 107, 97, 0.2);
 }
 
+.contact-item--tg-channel {
+  border-color: rgba(0, 136, 204, 0.35);
+}
+
+.contact-item--tg-channel a {
+  color: #0088cc;
+}
+
+.contact-item--tg-channel a:hover {
+  text-decoration: underline;
+}
+
 .contact-item__icon {
   font-size: 1.5rem;
   color: var(--primary);

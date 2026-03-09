@@ -1143,6 +1143,7 @@ button {
   padding: 2.5rem;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-xl);
+  scroll-margin-top: 20px;
 }
 
 .form-group {
@@ -1432,8 +1433,8 @@ button {
   }
 
   .hero {
-    padding-top: calc(var(--header-height) + 40px);
-    padding-bottom: 60px;
+    padding-top: calc(var(--header-height) + 30px);
+    padding-bottom: 50px;
   }
 
   .hero__grid {
@@ -1459,6 +1460,13 @@ button {
     grid-template-columns: 1fr;
   }
 
+  .about,
+  .services,
+  .certificates,
+  .contacts {
+    padding: 15px 0;
+  }
+
   .services-grid {
     grid-template-columns: 1fr;
     max-width: 400px;
@@ -1468,6 +1476,19 @@ button {
   .contacts-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts-info {
+    display: flex;
+    flex-direction: column;
+    order: 2; /* Блок с контактами вторым */
+  }
+
+  .booking-form-container {
+    order: 1; /* Форма первой */
+    scroll-margin-top: 20px;
   }
 
   .footer-content {

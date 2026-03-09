@@ -14,18 +14,27 @@
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💭</text></svg>">
 
-  <!-- Шрифты -->
+  <!-- Предзагрузка критических ресурсов -->
+  <link rel="preload" href="images/DS.jpg" as="image" type="image/jpeg" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+  <!-- Шрифты -->
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
     rel="stylesheet">
 
-  <!-- CSS -->
+  <!-- CSS с preload -->
+  <link rel="preload" href="style.css" as="style">
   <link rel="stylesheet" href="style.css">
 
-  <!-- Иконки -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Иконки Font Awesome - асинхронная загрузка -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print"
+    onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </noscript>
 </head>
 
 <body>
@@ -199,27 +208,22 @@
         </div>
 
         <div class="about__details">
-<div class="info-card">
-  <h3 class="info-card__title">
-    <i class="fas fa-map-marker-alt"></i>
-    Местоположение
-  </h3>
-  <p class="info-card__content">
-    <strong>Краснодар</strong><br>
-    ул. Домбайская, 10/1с1
-    <a
-      href="https://yandex.ru/navi/org/psikholog_darya_melnik/112438604431?si=2mqumcbrd1fjz9jayxmg73ykq8"
-      class="yandex-nav-icon"
-      target="_blank"
-      rel="noopener"
-      title="Построить маршрут в Яндекс.Навигаторе"
-      aria-label="Построить маршрут"
-    >
-      <i class="fas fa-location-arrow"></i>
-    </a><br>
-    <small>Удобное расположение, уютный кабинет</small>
-  </p>
-</div>
+          <div class="info-card">
+            <h3 class="info-card__title">
+              <i class="fas fa-map-marker-alt"></i>
+              Местоположение
+            </h3>
+            <p class="info-card__content">
+              <strong>Краснодар</strong><br>
+              ул. Домбайская, 10/1с1
+              <a href="https://yandex.ru/navi/org/psikholog_darya_melnik/112438604431?si=2mqumcbrd1fjz9jayxmg73ykq8"
+                class="yandex-nav-icon" target="_blank" rel="noopener" title="Построить маршрут в Яндекс.Навигаторе"
+                aria-label="Построить маршрут">
+                <i class="fas fa-location-arrow"></i>
+              </a><br>
+              <small>Удобное расположение, уютный кабинет</small>
+            </p>
+          </div>
 
           <div class="info-card">
             <h3 class="info-card__title">
@@ -400,24 +404,21 @@
               </div>
             </div>
 
-<div class="contact-item">
-  <i class="fas fa-map-marker-alt contact-item__icon"></i>
-  <div class="contact-item__content">
-    <h3>Адрес офиса</h3>
-    <p>
-      <a href="https://yandex.ru/navi/org/psikholog_darya_melnik/112438604431?si=2mqumcbrd1fjz9jayxmg73ykq8"
-         target="_blank"
-         rel="noopener"
-         title="Построить маршрут в Яндекс.Навигаторе"
-         style="display: inline-flex; align-items: center; gap: 4px;">
-        г. Краснодар<br>ул. Домбайская, 10/1с1
-        <span class="yandex-nav-icon" style="margin-left: 4px;">
-          <i class="fas fa-location-arrow"></i>
-        </span>
-      </a>
-    </p>
-  </div>
-</div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt contact-item__icon"></i>
+              <div class="contact-item__content">
+                <h3>Адрес офиса</h3>
+                <p>
+                  <a href="https://yandex.ru/navi/org/psikholog_darya_melnik/112438604431?si=2mqumcbrd1fjz9jayxmg73ykq8"
+                    class="address-link" target="_blank" rel="noopener" title="Построить маршрут в Яндекс.Навигаторе">
+                    г. Краснодар<br>ул. Домбайская, 10/1с1
+                    <span class="yandex-nav-icon">
+                      <i class="fas fa-location-arrow"></i>
+                    </span>
+                  </a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -524,18 +525,16 @@
               </div>
               <span>MAX: +7 (960) 475-11-47</span>
             </a>
-          <div class="footer-contact">
-  <i class="fas fa-map-marker-alt"></i>
-  <a href="https://yandex.ru/navi/org/psikholog_darya_melnik/112438604431?si=2mqumcbrd1fjz9jayxmg73ykq8"
-     target="_blank"
-     rel="noopener"
-     style="display: inline-flex; align-items: center; gap: 6px;">
-    Краснодар, ул. Домбайская, 10/1с1
-    <span class="yandex-nav-icon" style="width: 24px; height: 24px;">
-      <i class="fas fa-location-arrow" style="font-size: 12px;"></i>
-    </span>
-  </a>
-</div>
+            <div class="footer-contact">
+              <i class="fas fa-map-marker-alt"></i>
+              <a href="https://yandex.ru/navi/org/psikholog_darya_melnik/112438604431?si=2mqumcbrd1fjz9jayxmg73ykq8"
+                class="footer-address-link" target="_blank" rel="noopener">
+                Краснодар, ул. Домбайская, 10/1с1
+                <span class="yandex-nav-icon yandex-nav-icon--small">
+                  <i class="fas fa-location-arrow"></i>
+                </span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -554,7 +553,7 @@
   </button>
 
   <!-- Подключение JavaScript -->
-  <script src="main.js"></script>
+  <script src="main.js" defer></script>
 </body>
 
 </html>
